@@ -1,4 +1,4 @@
-# 📚 Dự Án Quản Lý Phát Triển Website Bán Sách Trực Tuyến (Fahasa Marketplace Model)
+# 📚 Dự Án Quản Lý Phát Triển Website Bán Sách Trực Tuyến (Online Book Marketplace Project Planning)
   
 > **Mã dự án (Project Code):** `BOOK_MP_SWPM_2025`  
 > **Mã tài liệu (Document Code):** `BOOK_MP_SWPM_2025-PLAN – v1.1`  
