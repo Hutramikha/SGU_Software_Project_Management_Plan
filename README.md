@@ -61,59 +61,60 @@ BOOK_MP_SWPM_2025 (Website Bán Sách Fahasa) ------------------- [85.00 ngày |
 │   └── 3.2 Backend & Security (Tasks 3.2.1 - 3.2.25) --------- [47.00 ngày |   329.20 hrs]
 ├── 4.0 Tích hợp hệ thống (Tasks 4.1 - 4.3) ------------------- [29.50 ngày |    36.00 hrs]
 └── 5.0 Kiểm thử & Triển khai website (Tasks 5.1 - 5.13) ------- [68.50 ngày |   839.41 hrs]
+```
 
 ---
 
 ## 📅 5. Các Mốc Bàn Giao Quan Trọng (Project Milestones)
 
-Dự án triển khai theo chiến lược **Waterfall điều chỉnh (Fast-tracking & Continuous Integration)**[cite: 1]:
+Dự án triển khai theo chiến lược **Waterfall điều chỉnh (Fast-tracking & Continuous Integration)**:
 
 | Task ID | Tên Mốc Milestone | Ngày hoàn thành | Sản phẩm bàn giao chính (Deliverables) |
 | :---: | :--- | :---: | :--- |
-| **9** | **Hoàn thành phân tích**[cite: 4] | `27/11/2025`[cite: 4] | Tài liệu Đặc tả Yêu cầu Phần mềm (**SRS**)[cite: 1, 4]. |
-| **16** | **Hoàn thành thiết kế**[cite: 4] | `14/11/2025`[cite: 4] | Tài liệu Thiết kế Phần mềm (**SWD**), Architecture & DB Schema[cite: 1, 4]. |
-| **65** | **Hoàn thành lập trình**[cite: 4] | `02/01/2026`[cite: 4] | Đóng băng mã nguồn Frontend & Backend (**Code Freeze**)[cite: 1, 4]. |
-| **74** | **Hoàn thành tích hợp**[cite: 4] | `28/01/2026`[cite: 4] | Tích hợp hoàn tất API VNPAY/MoMo, GHN/GHTK, Google Maps, Social Login[cite: 1, 4]. |
-| **89** | **Hoàn thành kiểm thử & triển khai**[cite: 4] | `08/01/2026`[cite: 4] | Hệ thống chạy trên môi trường Staging/Live, UAT Sign-off[cite: 1, 4]. |
-| **0** | **Kết thúc toàn bộ Dự án**[cite: 4] | `30/01/2026`[cite: 4] | Bàn giao Code, Tài liệu Hướng dẫn Cài đặt & Hướng dẫn Sử dụng[cite: 1, 4]. |
+| **9** | **Hoàn thành phân tích** | `27/11/2025` | Tài liệu Đặc tả Yêu cầu Phần mềm (**SRS**). |
+| **16** | **Hoàn thành thiết kế** | `14/11/2025` | Tài liệu Thiết kế Phần mềm (**SWD**), Architecture & DB Schema. |
+| **65** | **Hoàn thành lập trình** | `02/01/2026` | Đóng băng mã nguồn Frontend & Backend (**Code Freeze**). |
+| **74** | **Hoàn thành tích hợp** | `28/01/2026` | Tích hợp hoàn tất API VNPAY/MoMo, GHN/GHTK, Google Maps, Social Login. |
+| **89** | **Hoàn thành kiểm thử & triển khai** | `08/01/2026` | Hệ thống chạy trên môi trường Staging/Live, UAT Sign-off. |
+| **0** | **Kết thúc toàn bộ Dự án** | `30/01/2026` | Bàn giao Code, Tài liệu Hướng dẫn Cài đặt & Hướng dẫn Sử dụng. |
 
 ---
 
 ## 📑 6. Danh Mục 17 Trang & Module Chức Năng Cốt Lõi (SRS & Requirements)
 
-Dự án bao gồm 17 Module màn hình chi tiết được đặc tả luồng biến cố nghiệp vụ[cite: 2, 3]:
+Dự án bao gồm 17 Module màn hình chi tiết được đặc tả luồng biến cố nghiệp vụ:
 
-1. **Trang Chủ (Homepage):** Banner slide khuyến mãi, tìm kiếm động (max 100 ký tự), chuyển đổi ngôn ngữ VN/EN, danh mục nổi bật, gợi ý sản phẩm cá nhân hóa[cite: 2, 3].
-2. **Trang Sản Phẩm (Product Listing):** Menu Sidebar danh mục, bộ lọc đa tiêu chí (Giá, Thể loại/Genres, Thương hiệu, Độ tuổi, NXB), thanh sắp xếp AJAX[cite: 2, 3].
-3. **Trang Chi Tiết Sản Phẩm:** Khung thông tin cố định bên trái, form tra cứu nhà sách còn hàng (Google Maps API), đánh giá sao & nhận xét ẩn danh[cite: 2, 3].
-4. **Trang Sách Giáo Khoa & Đồ Dùng Học Tập:** Lọc theo cấp học (Lớp 1–12, Đại học), bộ lọc nhanh dụng cụ học sinh (Bút bi, Balo, Tập vở)[cite: 2, 3].
-5. **Giỏ Hàng & Quà Tặng (Cart & Gifts):** Tính tổng tiền realtime, áp dụng đồng thời mã Freeship + Coupon, modal chọn quà tặng theo mốc giá trị đơn hàng[cite: 2, 3].
-6. **Trang Flash Sale:** Đồng hồ đếm ngược (Countdown real-time), chuyển đổi phiên sale theo khung giờ (Đang bán, Sắp bán, Ngày mai)[cite: 2, 3].
-7. **Trang Mã Khuyến Mãi (Voucher Store):** Lưu mã trực tiếp vào ví cá nhân, xem điều kiện áp dụng, sao chép mã nhanh[cite: 2, 3].
-8. **Trang Sản Phẩm Mới:** Tải danh sách tự động từ Backend, hỗ trợ lọc theo Mới nhất, Bán chạy, Chiết khấu[cite: 2, 3].
-9. **Form Đăng Ký / Đăng Nhập / Khôi Phục Mật Khẩu:** Xác thực OTP qua SMS/Zalo ZNS, mã hóa mật khẩu bcrypt, bảo mật RBAC, tùy chọn ẩn/hiện mật khẩu[cite: 2, 3].
-10. **Trang Thông Tin Tài Khoản:** Quản lý hồ sơ cá nhân, cập nhật ngày sinh, giới tính, hiển thị cấp độ thành viên & số F-Point tích lũy[cite: 2, 3].
-11. **Trang Sổ Địa Chỉ (Address Book):** Quản lý địa chỉ giao hàng & thanh toán mặc định, tích hợp cây địa giới hành chính Việt Nam (Tỉnh/Thành, Quận/Huyện, Xã/Phường)[cite: 2, 3].
-12. **Trang Đổi Mật Khẩu:** Kiểm tra mật khẩu hiện tại trên server, kiểm tra độ mạnh mật khẩu mới[cite: 2, 3].
-13. **Trang Đơn Hàng & Chi Tiết Đơn Hàng:** Bộ lọc tab trạng thái đơn, dòng thời gian (Timeline) giao hàng, nút mua lại đơn cũ, tra cứu vận chuyển API[cite: 2, 3].
-14. **Trang Thông Báo:** Phân loại thông báo (Đơn hàng, Sự kiện, Mã giảm giá), đánh dấu trạng thái Đã đọc/Chưa đọc[cite: 2, 3].
-15. **Trang Ưu Đãi Thành Viên:** Thông tin phân hạng (Bạc, Vàng, Kim Cương), tỷ lệ tích lũy F-Point, ưu đãi quà sinh nhật[cite: 2, 3].
-16. **Trang Ví Voucher:** Quản lý Voucher của tôi và Voucher đối tác, cảnh báo mã hết hạn[cite: 2, 3].
-17. **Trang Tài Khoản F-Point / Freeship:** Hiển thị số dư điểm thưởng, bảng lịch sử biến động điểm (cộng/trừ), ô nạp điểm qua mã PIN[cite: 2, 3].
+1. **Trang Chủ (Homepage):** Banner slide khuyến mãi, tìm kiếm động (max 100 ký tự), chuyển đổi ngôn ngữ VN/EN, danh mục nổi bật, gợi ý sản phẩm cá nhân hóa.
+2. **Trang Sản Phẩm (Product Listing):** Menu Sidebar danh mục, bộ lọc đa tiêu chí (Giá, Thể loại/Genres, Thương hiệu, Độ tuổi, NXB), thanh sắp xếp AJAX.
+3. **Trang Chi Tiết Sản Phẩm:** Khung thông tin cố định bên trái, form tra cứu nhà sách còn hàng (Google Maps API), đánh giá sao & nhận xét ẩn danh.
+4. **Trang Sách Giáo Khoa & Đồ Dùng Học Tập:** Lọc theo cấp học (Lớp 1–12, Đại học), bộ lọc nhanh dụng cụ học sinh (Bút bi, Balo, Tập vở).
+5. **Giỏ Hàng & Quà Tặng (Cart & Gifts):** Tính tổng tiền realtime, áp dụng đồng thời mã Freeship + Coupon, modal chọn quà tặng theo mốc giá trị đơn hàng.
+6. **Trang Flash Sale:** Đồng hồ đếm ngược (Countdown real-time), chuyển đổi phiên sale theo khung giờ (Đang bán, Sắp bán, Ngày mai).
+7. **Trang Mã Khuyến Mãi (Voucher Store):** Lưu mã trực tiếp vào ví cá nhân, xem điều kiện áp dụng, sao chép mã nhanh.
+8. **Trang Sản Phẩm Mới:** Tải danh sách tự động từ Backend, hỗ trợ lọc theo Mới nhất, Bán chạy, Chiết khấu.
+9. **Form Đăng Ký / Đăng Nhập / Khôi Phục Mật Khẩu:** Xác thực OTP qua SMS/Zalo ZNS, mã hóa mật khẩu bcrypt, bảo mật RBAC, tùy chọn ẩn/hiện mật khẩu.
+10. **Trang Thông Tin Tài Khoản:** Quản lý hồ sơ cá nhân, cập nhật ngày sinh, giới tính, hiển thị cấp độ thành viên & số F-Point tích lũy.
+11. **Trang Sổ Địa Chỉ (Address Book):** Quản lý địa chỉ giao hàng & thanh toán mặc định, tích hợp cây địa giới hành chính Việt Nam (Tỉnh/Thành, Quận/Huyện, Xã/Phường).
+12. **Trang Đổi Mật Khẩu:** Kiểm tra mật khẩu hiện tại trên server, kiểm tra độ mạnh mật khẩu mới.
+13. **Trang Đơn Hàng & Chi Tiết Đơn Hàng:** Bộ lọc tab trạng thái đơn, dòng thời gian (Timeline) giao hàng, nút mua lại đơn cũ, tra cứu vận chuyển API.
+14. **Trang Thông Báo:** Phân loại thông báo (Đơn hàng, Sự kiện, Mã giảm giá), đánh dấu trạng thái Đã đọc/Chưa đọc.
+15. **Trang Ưu Đãi Thành Viên:** Thông tin phân hạng (Bạc, Vàng, Kim Cương), tỷ lệ tích lũy F-Point, ưu đãi quà sinh nhật.
+16. **Trang Ví Voucher:** Quản lý Voucher của tôi và Voucher đối tác, cảnh báo mã hết hạn.
+17. **Trang Tài Khoản F-Point / Freeship:** Hiển thị số dư điểm thưởng, bảng lịch sử biến động điểm (cộng/trừ), ô nạp điểm qua mã PIN.
 
 ---
 
 ## 🛡 7. Quản Lý Chất Lượng & Rủi Ro (QA & Risk Management)
 
 ### Chiến lược kiểm thử & Giảm thiểu Rủi ro Nhân sự
-* **Shift-Left Testing:** Tester viết Test Case ngay từ giai đoạn Phân tích Yêu cầu (Task 5.1 từ 28/10/2025)[cite: 1, 4].
-* **Bắt buộc Peer Code Review 100%:** Dev A (Tech Lead) và Dev B review mã nguồn chéo trước khi merge nhánh `develop` nhằm kiểm soát rủi ro nhân sự Fresher[cite: 1].
+* **Shift-Left Testing:** Tester viết Test Case ngay từ giai đoạn Phân tích Yêu cầu (Task 5.1 từ 28/10/2025).
+* **Bắt buộc Peer Code Review 100%:** Dev A (Tech Lead) và Dev B review mã nguồn chéo trước khi merge nhánh `develop` nhằm kiểm soát rủi ro nhân sự Fresher.
 
 ### Chiến lược Phân bổ 150 Lỗi mục tiêu (Defect Allocation):
-* **Requirements Review:** 18 lỗi (12%)[cite: 1]
-* **Design Review:** 15 lỗi (10%)[cite: 1]
-* **Code Review:** 38 lỗi (25%)[cite: 1]
-* **Unit Test:** 52 lỗi (35%)[cite: 1]
-* **Integration Test:** 15 lỗi (10%)[cite: 1]
-* **System Test:** 8 lỗi (5%)[cite: 1]
-* **UAT Leakage Target:** 4 lỗi ($\le 3\%$)[cite: 1]
+* **Requirements Review:** 18 lỗi (12%)
+* **Design Review:** 15 lỗi (10%)
+* **Code Review:** 38 lỗi (25%)
+* **Unit Test:** 52 lỗi (35%)
+* **Integration Test:** 15 lỗi (10%)
+* **System Test:** 8 lỗi (5%)
+* **UAT Leakage Target:** 4 lỗi ($\le 3\%$)
