@@ -1,4 +1,4 @@
-# 📚 Dự Án Quản Lý Phát Triển Website Bán Sách Trực Tuyến (Online Book Marketplace Project Planning)
+# Dự Án Quản Lý Phát Triển Website Bán Sách Trực Tuyến (Online Book Marketplace Project Planning)
   
 > **Mã dự án (Project Code):** `BOOK_MP_SWPM_2025`  
 > **Mã tài liệu (Document Code):** `BOOK_MP_SWPM_2025-PLAN – v1.1`  
@@ -6,13 +6,13 @@
 
 ---
 
-## 📌 1. Tổng Quan Dự Án (Project Overview)
+## 1. Tổng Quan Dự Án (Project Overview)
 
 Dự án tập trung vào việc lập kế hoạch, quản lý và mô hình hóa quy trình phát triển một **nền tảng thương mại điện tử chuyên bán sách, dụng cụ học tập và sản phẩm văn hóa** (theo mô hình Marketplace tương tự Fahasa.com). 
 
 Hệ thống được thiết kế theo kiến trúc Web Responsive kết hợp ứng dụng di động (Android/iOS) và tích hợp hệ thống backend API kết nối các cổng thanh toán, đơn vị vận chuyển bên thứ ba.
 
-### 🎯 Mục tiêu Dự án (Project Objectives)
+### Mục tiêu Dự án (Project Objectives)
 * **Thời lượng & Lịch trình:** Đảm bảo hoàn thành đúng hạn 85 ngày làm việc (kết thúc trước 01/02/2026).
 * **Ngân sách Nỗ lực:** Khống chế trong ngân sách cam kết 12.5 Man-Months (~1,997.41 giờ làm việc).
 * **Chất lượng:** 
@@ -23,7 +23,7 @@ Hệ thống được thiết kế theo kiến trúc Web Responsive kết hợp 
 
 ---
 
-## 👥 2. Cơ Cấu Tổ Chức & Phân Công Nhân Sự (Project Team & Roles)
+## 2. Cơ Cấu Tổ Chức & Phân Công Nhân Sự (Project Team & Roles)
 
 Dự án được quản lý và thực hiện bởi **Nhóm 3:00 PM** gồm 4 thành viên Fresher đảm nhiệm theo mô hình quy trình chuẩn:
 
@@ -36,7 +36,7 @@ Dự án được quản lý và thực hiện bởi **Nhóm 3:00 PM** gồm 4 t
 
 ---
 
-## 🛠 3. Kiến Trúc Công Nghệ & Môi Trường (Tech Stack & Environment)
+## 3. Kiến Trúc Công Nghệ & Môi Trường (Tech Stack & Environment)
 
 * **Backend:** Node.js (Express Framework), RESTful APIs.
 * **Frontend:** React.js / Vue.js (Responsive Design, HTML5, CSS3, JavaScript).
@@ -48,7 +48,7 @@ Dự án được quản lý và thực hiện bởi **Nhóm 3:00 PM** gồm 4 t
 
 ---
 
-## 📊 4. Cấu Trúc Phân Chia Công Việc (WBS & Effort Allocation)
+## 4. Cấu Trúc Phân Chia Công Việc (WBS & Effort Allocation)
 
 Dự án có quy mô ước tính **150 Function Points (FP)** với tổng nỗ lực **1,997.41 hrs** được chia thành 5 giai đoạn chính theo MS Project:
 
@@ -65,7 +65,7 @@ BOOK_MP_SWPM_2025 (Website Bán Sách Fahasa) ------------------- [85.00 ngày |
 
 ---
 
-## 📅 5. Các Mốc Bàn Giao Quan Trọng (Project Milestones)
+## 5. Các Mốc Bàn Giao Quan Trọng (Project Milestones)
 
 Dự án triển khai theo chiến lược **Waterfall điều chỉnh (Fast-tracking & Continuous Integration)**:
 
@@ -80,7 +80,7 @@ Dự án triển khai theo chiến lược **Waterfall điều chỉnh (Fast-tra
 
 ---
 
-## 📑 6. Danh Mục 17 Trang & Module Chức Năng Cốt Lõi (SRS & Requirements)
+## 6. Danh Mục 17 Trang & Module Chức Năng Cốt Lõi (SRS & Requirements)
 
 Dự án bao gồm 17 Module màn hình chi tiết được đặc tả luồng biến cố nghiệp vụ:
 
@@ -104,7 +104,7 @@ Dự án bao gồm 17 Module màn hình chi tiết được đặc tả luồng 
 
 ---
 
-## 🛡 7. Quản Lý Chất Lượng & Rủi Ro (QA & Risk Management)
+## 7. Quản Lý Chất Lượng & Rủi Ro (QA & Risk Management)
 
 ### Chiến lược kiểm thử & Giảm thiểu Rủi ro Nhân sự
 * **Shift-Left Testing:** Tester viết Test Case ngay từ giai đoạn Phân tích Yêu cầu (Task 5.1 từ 28/10/2025).
